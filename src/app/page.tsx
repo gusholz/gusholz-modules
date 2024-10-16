@@ -1,7 +1,6 @@
 "use client"
-import Navbar from "@/components/navbar";
-import styled from "styled-components";
 import localFont from "next/font/local";
+import Navbar from "@/components/navbar";
 import ThemeSelector from "@/components/themeSelector";
 import OverviewSection from "@/components/overviewSection";
 
