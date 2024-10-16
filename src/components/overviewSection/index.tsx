@@ -2,7 +2,6 @@ import getText, { ProjectTexts, SupportedLanguages } from "@/enums/texts";
 import styles from "./overviewSection.module.css"
 import localFont from "next/font/local";
 
-
 const LektonFont = localFont({
   src: "../../app/fonts/lekton.ttf",
   display: "swap"
