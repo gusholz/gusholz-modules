@@ -1,0 +1,26 @@
+.mainSection {
+  background-color: #FAE3D9;
+  width: calc(100vw - 250px);
+  height: 100vh;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.container {
+  display: flex;
+  gap: 5%;
+  margin-top: 10vh;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.title {
+  color: #282828;
+}
+
+.paragraph {
+  color: #282828;
+  max-width: 25vw;
+}
