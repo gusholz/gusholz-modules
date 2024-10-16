@@ -1,4 +1,4 @@
-import Navbar from "@/components/navbar";
+import Navbar from "@/components/navbar-temp";
 
 export default function TabsPage() {
   return (
