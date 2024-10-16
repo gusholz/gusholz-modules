@@ -1,5 +1,5 @@
 "use client"
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/navbar";
 import ThemeSelector from "@/components/themeSelector";
 import OverviewSection from "@/components/overviewSection";
 
