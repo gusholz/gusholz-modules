@@ -1,6 +1,5 @@
 'use client'
 import Link from "next/link";
-import styled from "styled-components";
 import styles from "./navbar.module.css"
 import localFont from "next/font/local";
 import NextImage from "next/image";
