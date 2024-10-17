@@ -1,5 +1,5 @@
 .mainSection {
-  background-color: #FAE3D9;
+  background-color: var(--background-color);
   width: calc(100vw - 250px);
   height: 100vh;
   margin-left: 250px;
@@ -17,10 +17,10 @@
 }
 
 .title {
-  color: #282828;
+  color: var(--text-color);
 }
 
 .paragraph {
-  color: #282828;
+  color: var(--text-color);
   max-width: 25vw;
 }

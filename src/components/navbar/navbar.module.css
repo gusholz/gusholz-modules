@@ -4,7 +4,7 @@
   left: 0;
   width: 250px;
   height: 100vh;
-  background-color: #D9D9D9;
+  background-color: var(--background-color-menu);
 }
 
 .container {
@@ -15,7 +15,7 @@
 }
 
 .navTitle {
-  color: #282828;
+  color: var(--text-color);
   text-align: center;
   font-size: 64px;
 }
@@ -30,6 +30,7 @@
 }
 
 .pagesListItem {
+  color: var(--text-color);
   font-size: 36px;
   min-height: 1vh;
   padding: 1vh;

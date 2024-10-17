@@ -1,16 +1,28 @@
 "use client"
 import styles from "./themeSelector.module.css"
 import NextImage from "next/image";
-import { useState } from "react";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
+
+enum Themes {
+  light = "light",
+  dark = "dark"
+}
 
 export default function ThemeSelector() {
-  const [selectedTheme, setSelectedTheme] = useState<"light" | "dark">("light");
+  const {theme, setTheme} = useTheme();
+  const [selectedThemeClass, setSelectedThemeClass] = useState<Themes>(Themes.light);
+
+  useEffect(() => {
+    let newThemeClass = theme === "light" ? Themes.light : Themes.dark
+    setSelectedThemeClass(newThemeClass)
+  }, [theme]);
 
   return (
     <div className={styles.iconsContainer}>
       <span 
-        className={selectedTheme == "light" ? styles.selectedIcon : styles.nonSelectedIcon}
-        onClick={() => setSelectedTheme("light")}
+        className={selectedThemeClass == "light" ? styles.selectedIcon : styles.nonSelectedIcon}
+        onClick={() => setTheme("light")}
       >
         <NextImage
           width={32}
@@ -20,8 +32,8 @@ export default function ThemeSelector() {
         />
       </span>
       <span 
-        className={selectedTheme == "dark" ? styles.selectedIcon : styles.nonSelectedIcon}
-        onClick={() => setSelectedTheme("dark")}
+        className={selectedThemeClass == "dark" ? styles.selectedIcon : styles.nonSelectedIcon}
+        onClick={() => setTheme("dark")}
       >
         <NextImage
           width={32}
