@@ -14,7 +14,7 @@ export default function ThemeSelector() {
   const [selectedThemeClass, setSelectedThemeClass] = useState<Themes>(Themes.light);
 
   useEffect(() => {
-    let newThemeClass = theme === "light" ? Themes.light : Themes.dark
+    const newThemeClass = theme === "light" ? Themes.light : Themes.dark
     setSelectedThemeClass(newThemeClass)
   }, [theme]);
 
